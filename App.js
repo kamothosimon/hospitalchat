@@ -13,11 +13,11 @@ export default function App() {
       if (userMessage.match(/hello|hi|hey/)) {
         responseMessage = `Hello! Welcome to Kijabe Hospital. How can we assist you today?`;
       } else if (userMessage.match(/appointment/)) {
-        responseMessage = `To make an appointment, please call our appointment hotline at XXX-XXXX or visit our website at www.kijabehospital.com/appointments`;
+        responseMessage = `To make an appointment, please call our appointment hotline at or visit our website at www.kijabehospital.com/appointments`;
       } else if (userMessage.match(/visiting hours/)) {
         responseMessage = `Our visiting hours are from 10 AM to 8 PM, Monday to Sunday. Please note that visiting hours may vary for different wards and departments.`;
       } else {
-        responseMessage = `Sorry, I couldn't understand your message. Please contact our support team for assistance.`;
+        responseMessage = `Sorry, I couldn't understand your message. Please contact  us.`;
       }
   
       const userMessageObject = { text: inputText, sender: 'user' };
